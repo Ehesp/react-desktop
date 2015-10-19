@@ -4,9 +4,10 @@ import Styling, { mergeStyles, applyStyle } from '../Styling';
 
 var styles = {
   osx_10_11: {
-    width: '16px',
-    height: '16px',
+    width: '200px',
+    height: '200px',
     position: 'relative',
+    border: '1px solid red',
 
     container: {
       position: 'relative',
@@ -103,18 +104,22 @@ class ProgressRingWindows extends Component {
     const svg = (
       <svg
         id="field"
+        width="200px"
+        height="200px"
         ref="element" x="0px" y="0px" viewBox="0 0 150 150" style={applyStyle(styles)} {...props}
       >
-        <circle id="ball" ref="0" fill="#000000" cx="66" cy="7.3" r="7.3" style={{position: 'absolute'}}/>
-        <circle ref="1" fill="#000000" cx="66" cy="142.7" r="7.3"/>
-        <circle ref="2" fill="#000000" cx="7.3" cy="41.2" r="7.3"/>
-        <circle ref="3" fill="#000000" cx="7.3" cy="108.9" r="7.3"/>
-        <circle ref="4" fill="#000000" cx="124.6" cy="108.9" r="7.3"/>
-        <circle ref="5" fill="#000000" cx="124.6" cy="41.2" r="7.3"/>
+        <circle id="ball" ref="0" fill="#000000" cx="75" cy="75" r="7.3"/>
       </svg>
     );
 
-    let content = svg;
+    /*        <circle ref="1" fill="#000000" cx="66" cy="142.7" r="7.3"/>
+     <circle ref="2" fill="#000000" cx="7.3" cy="41.2" r="7.3"/>
+     <circle ref="3" fill="#000000" cx="7.3" cy="108.9" r="7.3"/>
+     <circle ref="4" fill="#000000" cx="124.6" cy="108.9" r="7.3"/>
+     <circle ref="5" fill="#000000" cx="124.6" cy="41.2" r="7.3"/>
+*/
+
+     let content = svg;
     if (absolute) {
       content = (
         <div style={applyStyle(this.styles.container)}>
