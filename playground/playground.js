@@ -14,6 +14,8 @@ import {
   Desktop
 } from '../src/Main';
 
+import Ref from '../src/IndeterminateProgressWheel/IndeterminateProgressRing.windows/ref/ref';
+
 document.title = 'React Desktop Playground';
 document.body.style.padding = '30px 40px';
 document.body.style.background = 'white';
@@ -64,6 +66,7 @@ class Window2 extends Component {
         </TitleBar>
 
         <IndeterminateProgressWheel/>
+        <Ref/>
       </Window>
     );
   }

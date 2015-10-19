@@ -7,7 +7,7 @@ var styles = {
     width: '200px',
     height: '200px',
     position: 'relative',
-    border: '1px solid red',
+    border: '1px solid rgba(0, 0, 0, .05)',
 
     container: {
       position: 'relative',
@@ -40,7 +40,7 @@ class ProgressRingWindows extends Component {
   }
 
   componentDidMount() {
-    require('./Animation.js');
+    require('./Animation1.js');
     //this.animate();
     if (findDOMNode(this).previousSibling) {
       this.applySiblingStyle();
@@ -109,6 +109,11 @@ class ProgressRingWindows extends Component {
         ref="element" x="0px" y="0px" viewBox="0 0 150 150" style={applyStyle(styles)} {...props}
       >
         <circle id="ball" ref="0" fill="#000000" cx="75" cy="75" r="7.3"/>
+        <circle id="ball1" ref="1" fill="#000000" cx="75" cy="75" r="7.3"/>
+        <circle id="ball2" ref="2" fill="#000000" cx="75" cy="75" r="7.3"/>
+        <circle id="ball3" ref="3" fill="#000000" cx="75" cy="75" r="7.3"/>
+        <circle id="ball4" ref="4" fill="#000000" cx="75" cy="75" r="7.3"/>
+        <circle id="ball5" ref="5" fill="#000000" cx="75" cy="75" r="7.3"/>
       </svg>
     );
 
