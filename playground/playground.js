@@ -7,7 +7,7 @@ import {
   Toolbar,
   Box,
   SegmentedControl,
-  ProgressCircle,
+  IndeterminateProgressWheel,
   Form,
   Label,
   Window,
@@ -63,7 +63,7 @@ class Window2 extends Component {
           <Toolbar/>
         </TitleBar>
 
-        <ProgressCircle/>
+        <IndeterminateProgressWheel/>
       </Window>
     );
   }

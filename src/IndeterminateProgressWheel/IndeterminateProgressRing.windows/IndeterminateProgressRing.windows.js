@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { findDOMNode } from 'react-dom';
-import Styling, { mergeStyles, applyStyle } from '../Styling';
+import Styling, { mergeStyles, applyStyle } from '../../Styling';
 
 var styles = {
   osx_10_11: {
@@ -40,7 +40,7 @@ class ProgressRingWindows extends Component {
   }
 
   componentDidMount() {
-    require('./ProgressRing.windows/Animation.js');
+    require('./Animation.js');
     //this.animate();
     if (findDOMNode(this).previousSibling) {
       this.applySiblingStyle();
